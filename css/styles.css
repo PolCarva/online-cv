@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  height: 99svh;
+}
+
+#pdf-viewer {
+  width: 100%;
+  height: 100vh;
+  /* Ajusta la altura según lo necesites */
+}
+
+.fixed {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #008cba;
+  /* Color de fondo */
+  border: none;
+  /* Remover borde */
+  color: white;
+  /* Color del texto */
+  padding: 15px 32px;
+  /* Espaciado interno */
+  text-align: center;
+  /* Alineación del texto */
+  text-decoration: none;
+  /* Remover subrayado */
+  display: inline-block;
+  /* Hacer que el elemento sea en línea-bloque */
+  font-size: 16px;
+  /* Tamaño de la fuente */
+  margin: 4px 2px;
+  /* Margen externo */
+  cursor: pointer;
+  /* Cambiar el cursor a una mano al pasar sobre el botón */
+  border-radius: 12px;
+  /* Bordes redondeados */
+  transition: background-color 0.3s;
+  /* Transición suave del color de fondo */
+}
+
+.fixed:hover {
+  background-color: #006699;
+  /* Cambiar color de fondo al pasar el ratón */
+}
