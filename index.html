@@ -8,31 +8,30 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <button class="fixed" id="changeLang">EN</button>
+    <button class="fixed" id="changeLang">ES</button>
     <iframe
-      src="https://drive.google.com/file/d/1nMv6-LYp-RT3HnUgynmxUnacKcPtXr4q/preview"
+      src="https://drive.google.com/file/d/1auf0o0sDEKFrIc2Pu90baxXvN5v3kgis/preview"
       width="100%"
       height="100%"
       frameborder="0"
     ></iframe>
     <script>
-        const changeLang = document.getElementById("changeLang");
-        const iframe = document.querySelector("iframe");
-        const url = iframe.src;
-        const lang = {
-            es: "13XOIBCbPgAxBdL-9gY139NKickN_L0pZ",
-            en: "1auf0o0sDEKFrIc2Pu90baxXvN5v3kgis",
-        };
-        changeLang.addEventListener("click", () => {
-            if (changeLang.innerHTML === "EN") {
-            changeLang.innerHTML = "ES";
-            iframe.src = url.replace(lang.es, lang.en);
-            } else {
-            changeLang.innerHTML = "EN";
-            iframe.src = url.replace(lang.en, lang.es);
-            }
-        });
-
+      const changeLang = document.getElementById("changeLang");
+      const iframe = document.querySelector("iframe");
+      const url = iframe.src;
+      const lang = {
+        es: "13XOIBCbPgAxBdL-9gY139NKickN_L0pZ",
+        en: "1auf0o0sDEKFrIc2Pu90baxXvN5v3kgis",
+      };
+      changeLang.addEventListener("click", () => {
+        if (changeLang.innerHTML === "EN") {
+          changeLang.innerHTML = "ES";
+          iframe.src = url.replace(lang.es, lang.en);
+        } else {
+          changeLang.innerHTML = "EN";
+          iframe.src = url.replace(lang.en, lang.es);
+        }
+      });
     </script>
   </body>
 </html>
